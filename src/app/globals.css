@@ -20,3 +20,18 @@ body {
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+@keyframes cyberpunk {
+  0% {
+    color: #f2994a; /* Initial color */
+    text-shadow: none; /* Initial text-shadow */
+  }
+  50% {
+    color: #0ff; /* Midpoint color */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff; /* Blurry text-shadow */
+  }
+  100% {
+    color: #f2994a; /* Return to original color */
+    text-shadow: none; /* Return to no text-shadow */
+  }
+}

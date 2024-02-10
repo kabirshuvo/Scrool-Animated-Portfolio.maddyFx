@@ -12,22 +12,22 @@ const NavBar = () => {
         </div>
         <div>
           <ul className="flex gap-7 pt-2">
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/about">About</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/designs">Designs</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/offers">Offers</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/services">Services</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
