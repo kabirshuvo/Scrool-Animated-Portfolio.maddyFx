@@ -18,29 +18,33 @@ const DesignsPage = () => {
             </span>
           </h1>
           <p className="text-gray-200 hidden md:block">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Explore a decade-long journey of innovation and creativity,
+            showcasing a diverse range of design projects spanning textile
+            engineering and graphic design domains. From conceptualization to
+            execution, each project reflects a unique blend of technical
+            expertise and artistic flair, pushing the boundaries of traditional
+            design practices.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
               className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              Learn more
+              Design Gallery 1
             </Link>
             <Link
               href="/my-projects"
               className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
-              My projects
+              Design Gallery 2
             </Link>
             <Link
               href="/contact-me"
               className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
-              Contact me
+              Design Gallery 3
             </Link>
           </div>
         </div>
@@ -97,6 +101,10 @@ const DesignsPage = () => {
         width={300}
         className="absolute top-0 left-0 z-[10]"
       />
+
+      <section className="w-screen h-screen relative">
+        <h1>Second Section</h1>
+      </section>
     </main>
   );
 };
