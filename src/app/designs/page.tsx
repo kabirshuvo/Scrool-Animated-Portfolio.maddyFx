@@ -51,20 +51,20 @@ const DesignsPage = () => {
           href="/#"
           className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Learn more
+          Design Gallery 1
         </Link>
 
         <Link
           href="/#"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          My projects
+          Design Gallery 2
         </Link>
         <Link
           href="/#"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Contact me
+          Design Gallery 3
         </Link>
       </div>
 
