@@ -1,7 +1,6 @@
-import React from "react";
+"use client";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-
-import { FaRocket, FaWallet } from "react-icons/fa";
 import { Abril_Fatface } from "next/font/google";
 import CyberpunkTitle from "./cyberPunkTextAnimation/CyberpunkTitle";
 
@@ -9,9 +8,56 @@ const abril = Abril_Fatface({
   subsets: ["latin"],
   weight: "400",
 });
+
 const HeroSection = () => {
+  const heroSectionRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLDivElement>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      const { clientX, clientY } = event;
+      const currentImageRef = imageRef.current;
+      if (currentImageRef) {
+        const rect = currentImageRef.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const x = (clientX - centerX) / 60;
+        const y = (clientY - centerY) / 60;
+        setMousePosition({ x, y });
+      }
+    };
+
+    const heroSectionElement = heroSectionRef.current;
+    if (heroSectionElement) {
+      heroSectionElement.addEventListener("mouseenter", () => {
+        window.addEventListener("mousemove", handleMouseMove);
+      });
+
+      heroSectionElement.addEventListener("mouseleave", () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+      });
+    }
+
+    return () => {
+      if (heroSectionElement) {
+        heroSectionElement.removeEventListener("mouseenter", () => {
+          window.addEventListener("mousemove", handleMouseMove);
+        });
+
+        heroSectionElement.removeEventListener("mouseleave", () => {
+          window.removeEventListener("mousemove", handleMouseMove);
+        });
+      }
+    };
+  }, []);
+
   return (
-    <section className="flex flex-col md:flex-row min-h-screen">
+    <section
+      ref={heroSectionRef}
+      className="flex flex-col md:flex-row min-h-screen"
+      style={{ perspective: "1000px" }}
+    >
       <div className="w-full md:w-1/2 text-center md:text-right flex flex-col justify-center items-center p-8">
         <div className="text-5xl md:text-7xl my-7 text-[#f2994a]">
           <CyberpunkTitle>
@@ -39,7 +85,14 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex justify-center items-center ">
+      <div
+        className="w-full md:w-1/2 flex justify-center items-center "
+        style={{
+          transform: `rotateX(${mousePosition.y}deg) rotateY(${mousePosition.x}deg)`,
+          transition: "transform 0.1s ease-out",
+        }}
+        ref={imageRef}
+      >
         <div className="border border-white p-8">
           <div className="w-64 h-64 md:w-96 md:h-96 ">
             <Image

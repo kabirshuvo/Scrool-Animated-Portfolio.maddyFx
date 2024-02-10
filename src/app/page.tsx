@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import ImageCardTwo from "@/components/image-gallery/ImageCardTwo";
 import TextAnimation from "@/components/cyberPunkTextAnimation/TextAnimation";
 import ImageCardsOne from "@/components/image-gallery/ImageCardsOne";
+import TextAnimationOne from "@/components/cyberPunkTextAnimation/TextAnimationOne";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function Home() {
       <ImageCardsOne />
       <MyFiverJourney />
       <ImageCardTwo />
+      <TextAnimationOne />
       <MyHobbies />
       <TextAnimation />
       <Footer />
