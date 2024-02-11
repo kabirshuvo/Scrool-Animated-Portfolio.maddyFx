@@ -4,7 +4,7 @@ import ThemeSwitcher from './ThemeSwitcher'
 
 const NavBar = () => {
   return (
-    <nav className='container flex items-center justify-between'>
+    <nav className='container flex items-center justify-between px-4'>
               <ul className='flex gap-7'>
                 <li>
                   <Link href='/'>Home</Link>
