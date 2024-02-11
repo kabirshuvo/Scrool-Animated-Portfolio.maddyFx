@@ -1,25 +1,114 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import MySkills from "../my-skills/page";
 
 const DesignsPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        {/* Replace the responsive gallery with Next.js Image component */}
-        <div className="container grid gap-3px auto-cols-minmax lg:auto-cols-minmax">
-          {/* Replace these image sources with your own */}
-          <Image src="/image1.jpg" alt="Image 1" width={130} height={130} className="w-full h-full object-cover transition-transform transform-origin-65-75 hover:scale-120" />
-          <Image src="/image2.jpg" alt="Image 2" width={130} height={130} className="w-full h-full object-cover transition-transform transform-origin-65-75 hover:scale-120" />
-          {/* Add more images as needed */}
+    <main className="w-screen h-screen relative">
+      <div
+        className="flex items-center w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: "url(/main-bg.webp)" }}
+      >
+        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[1280px]">
+          <h1 className="text-[50px] text-white font-semibold">
+            Designing Fabrics & Creating Visuals <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+              {" "}
+              Transforming Ideas into Art
+            </span>
+          </h1>
+          <p className="text-gray-200 hidden md:block">
+            Explore a decade-long journey of innovation and creativity,
+            showcasing a diverse range of design projects spanning textile
+            engineering and graphic design domains. From conceptualization to
+            execution, each project reflects a unique blend of technical
+            expertise and artistic flair, pushing the boundaries of traditional
+            design practices.
+          </p>
+          <div className="flex-col md:flex-row hidden md:flex gap-5">
+            <Link
+              href="/my-skills"
+              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+            >
+              Design Gallery 1
+            </Link>
+            <Link
+              href="/my-projects"
+              className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+            >
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              Design Gallery 2
+            </Link>
+            <Link
+              href="/contact-me"
+              className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+            >
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              Design Gallery 3
+            </Link>
+          </div>
         </div>
       </div>
 
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        Next.js
+      <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
+        <Link
+          href="/#"
+          className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          Design Gallery 1
+        </Link>
+
+        <Link
+          href="/#"
+          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          Design Gallery 2
+        </Link>
+        <Link
+          href="/#"
+          className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+        >
+          Design Gallery 3
+        </Link>
       </div>
+
+      <div className="absolute bottom-0 right-0 z-[10]">
+        <Image
+          src="/horse.png"
+          alt="horse"
+          height={300}
+          width={300}
+          className="absolute right-55 top-40"
+        />
+
+        <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
+      </div>
+
+      <div className="absolute bottom-0 z-[5] w-full h-auto">
+        <Image
+          src="/trees.webp"
+          alt="trees"
+          width={2000}
+          height={2000}
+          className="w-full h-full"
+        />
+      </div>
+
+      <Image
+        src="/stars.png"
+        alt="stars"
+        height={300}
+        width={300}
+        className="absolute top-0 left-0 z-[10]"
+      />
+
+      <section className="w-screen h-screen relative">
+        <h1>Second Section</h1>
+      </section>
+      <MySkills />
     </main>
   );
-}
+};
 
 export default DesignsPage;

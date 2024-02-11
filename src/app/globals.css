@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
+=======
+body {
+  /* overflow: hidden; */
+}
+
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+>>>>>>> d1177ed0e8b8b9c1f8465d9394ef2255199aa852

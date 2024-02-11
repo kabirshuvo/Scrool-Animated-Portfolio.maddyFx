@@ -1,17 +1,9 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const AboutPage = () => {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+  return <>About Page Comming Soon</>;
+};
 
-    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-      About Page
-    </div>
-    <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-     Next.js 
-    </div>
-  </main>
-  )
-}
-
-export default AboutPage
+export default AboutPage;

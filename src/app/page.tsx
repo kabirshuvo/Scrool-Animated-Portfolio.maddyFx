@@ -1,15 +1,18 @@
 import Image from "next/image";
 
+import { FaRocket, FaWallet } from "react-icons/fa";
+import { Abril_Fatface } from "next/font/google";
+import HeroSection from "@/components/HeroSection";
+
+const abril = Abril_Fatface({
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        Home Page
-      </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-       Next.js 
-      </div>
+    <main className="flex flex-col md:flex-row min-h-screen">
+      <HeroSection />
     </main>
   );
 }
