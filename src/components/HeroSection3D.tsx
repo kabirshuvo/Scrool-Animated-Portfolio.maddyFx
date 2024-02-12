@@ -9,7 +9,7 @@ const abril = Abril_Fatface({
   weight: "400",
 });
 
-const HeroSection = () => {
+const HeroSection3D = () => {
   const heroSectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -22,8 +22,8 @@ const HeroSection = () => {
         const rect = currentImageRef.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
-        const x = (clientX - centerX) / 60;
-        const y = (clientY - centerY) / 60;
+        const x = (clientX - centerX) / 20;
+        const y = (clientY - centerY) / 20;
         setMousePosition({ x, y });
       }
     };
@@ -109,4 +109,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HeroSection3D;
