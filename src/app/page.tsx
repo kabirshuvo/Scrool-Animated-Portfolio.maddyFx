@@ -26,8 +26,8 @@ export default function Home() {
   return (
     <main className="flex flex-col  min-h-screen">
       <HeroSection2D />
+      <ImageCardsOne />
       <TextAnimationOne value={Words} />
-
       <ImageCardsOne />
       <MyFiverJourney />
       <ImageCardTwo />
