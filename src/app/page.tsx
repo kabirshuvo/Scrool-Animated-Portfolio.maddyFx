@@ -18,9 +18,9 @@ const abril = Abril_Fatface({
 });
 
 const Paragraph =
-  " My Fiver Journey. In the year of 1965 when I was not in the world then my Grandpa Was dreamed that I'm working for fiver";
+  " My Fiver Journey. In the year of 1965 when I was not in the world then my Grandpa Was dreamed that I'm working for fiver.";
 
-const Words = "Lets make great work together.";
+const Words = "Be Smarter. Lets make great work together.";
 
 export default function Home() {
   return (
