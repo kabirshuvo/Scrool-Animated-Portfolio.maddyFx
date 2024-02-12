@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* overflow: hidden; */
-}
-
 .flip-card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -34,4 +30,10 @@ body {
     color: #f2994a; /* Return to original color */
     text-shadow: none; /* Return to no text-shadow */
   }
+}
+
+.textAnimation {
+  font-size: 3rem;
+  width: 50%;
+  margin-left: 2rem;
 }
