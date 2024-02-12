@@ -34,6 +34,15 @@
 
 .textAnimation {
   font-size: 3rem;
-  width: 50%;
+  width: 70%;
   margin-left: 2rem;
+}
+
+.textAnimationOne {
+  font-size: 13rem;
+  width: 70%;
+  margin-left: 2rem;
+  line-height: 13rem;
+  text-align: center;
+  font: bolder;
 }

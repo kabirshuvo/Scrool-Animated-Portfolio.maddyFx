@@ -1,9 +1,15 @@
 import React from "react";
 
-const TextAnimationOne = () => {
+import "../../app/globals.css";
+
+interface TextAnimationProps {
+  value: string;
+}
+
+const TextAnimationOne: React.FC<TextAnimationProps> = ({ value }) => {
   return (
-    <div>
-      <h1>TextAnimationOne TextAnimationOne</h1>
+    <div className="h-screen flex justify-center">
+      <p className="textAnimationOne">{value}</p>
     </div>
   );
 };

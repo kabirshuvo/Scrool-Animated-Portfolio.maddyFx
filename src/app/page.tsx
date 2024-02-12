@@ -20,19 +20,21 @@ const abril = Abril_Fatface({
 const Paragraph =
   " My Fiver Journey. In the year of 1965 when I was not in the world then my Grandpa Was dreamed that I'm working for fiver.";
 
-const Words = "Be Smarter. Lets make great work together.";
+const Words = "Lets make  great work together.";
 
 export default function Home() {
   return (
     <main className="flex flex-col  min-h-screen">
       <HeroSection2D />
-      <TextAnimation value={Paragraph} />
+      <TextAnimationOne value={Words} />
+
       <ImageCardsOne />
       <MyFiverJourney />
       <ImageCardTwo />
-      <TextAnimationOne />
+      <TextAnimation value={Paragraph} />
+
       <MyHobbies />
-      <TextAnimation value={Words} />
+      <TextAnimation value={Paragraph} />
       <Footer />
     </main>
   );
