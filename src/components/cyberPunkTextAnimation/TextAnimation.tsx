@@ -20,7 +20,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({ value }) => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="h-screen"></div>
+      {/* <div className="h-screen"></div> */}
       <motion.p
         className="textAnimation"
         ref={element}
@@ -28,7 +28,7 @@ const TextAnimation: React.FC<TextAnimationProps> = ({ value }) => {
       >
         {value}
       </motion.p>
-      <div className="h-screen"></div>
+      {/* <div className="h-screen"></div> */}
     </div>
   );
 };

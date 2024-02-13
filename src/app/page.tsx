@@ -11,6 +11,7 @@ import TextAnimation from "@/components/cyberPunkTextAnimation/TextAnimation";
 import ImageCardsOne from "@/components/image-gallery/ImageCardsOne";
 import TextAnimationOne from "@/components/cyberPunkTextAnimation/TextAnimationOne";
 import HeroSection3D from "@/components/HeroSection3D";
+import WordByWordTextAnimation from "@/components/cyberPunkTextAnimation/WordByWordTextAnimation";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const abril = Abril_Fatface({
 });
 
 const Paragraph =
-  " My Fiver Journey. In the year of 1965 when I was not in the world then my Grandpa Was dreamed that I'm working for fiver.";
+  "My Fiver Journey. In the year of 1965 when I was not in the world then my Grandpa Was dreamed that I'm working for fiver.";
 
 const Words = "Lets make  great work together.";
 
@@ -29,6 +30,7 @@ export default function Home() {
       <ImageCardsOne />
       <TextAnimationOne value={Words} />
       <ImageCardsOne />
+      <WordByWordTextAnimation value={Paragraph} />
       <MyFiverJourney />
       <ImageCardTwo />
       <TextAnimation value={Paragraph} />
