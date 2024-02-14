@@ -60,9 +60,7 @@ const HeroSection2D = () => {
     >
       <div className="w-full md:w-1/2 text-center md:text-right flex flex-col justify-center items-center p-8">
         <div className="text-5xl md:text-7xl my-7 text-[#f2994a]">
-          <CyberpunkTitle>
-            This is the first test of hero text animation
-          </CyberpunkTitle>
+          <CyberpunkTitle>Maddy.FX</CyberpunkTitle>
         </div>
         <p className="text-base md:text-lg">
           Adobe Illustrator is my professional Identity. I am thank full to
