@@ -1,15 +1,29 @@
-import React from "react";
-
+import { Button } from "antd";
+import { GoogleOutlined, GithubOutlined } from "@ant-design/icons";
+import Head from "next/head";
+import styles from "@/styles/Login.module.css";
 const LoginPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        Login Page
+    <div>
+      <Head>
+        <title>Next Login</title>
+      </Head>
+      <div className={styles.form}>
+        <h3>LOGIN</h3>
+        <div className={styles.social_icons}>
+          <GoogleOutlined />
+          <GithubOutlined />
+        </div>
+        <hr />
+        <form>
+          <label htmlFor="">Your Email</label>
+          <input type="email" />
+          <label htmlFor="">Your Password</label>
+          <input type="password" />
+          <Button>Login</Button>
+        </form>
       </div>
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        Next.js
-      </div>
-    </main>
+    </div>
   );
 };
 
