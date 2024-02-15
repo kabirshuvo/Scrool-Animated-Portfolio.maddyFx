@@ -14,7 +14,7 @@ const projects: ProjectItem[] = [
   {
     title: "Print On Demand",
     description: "View Designs",
-    src: "c2montreal.png",
+    src: "AdobeIllustrator_logo.png",
     color: "#000000",
   },
   {
