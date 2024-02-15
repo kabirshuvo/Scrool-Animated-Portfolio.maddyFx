@@ -60,7 +60,7 @@ const HeroSection2D = () => {
     >
       <div className="w-full md:w-1/2 text-center md:text-right flex flex-col justify-center items-center p-8">
         <div className="text-5xl md:text-7xl my-7 text-[#f2994a]">
-          <CyberpunkTitle>Maddy.FX</CyberpunkTitle>
+          <h1 className="flex gap-11">I came, I saw, I won</h1>
         </div>
         <p className="text-base md:text-lg">
           Adobe Illustrator is my professional Identity. I am thank full to

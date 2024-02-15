@@ -12,6 +12,7 @@ import ImageCardsOne from "@/components/image-gallery/ImageCardsOne";
 import TextAnimationOne from "@/components/cyberPunkTextAnimation/TextAnimationOne";
 import HeroSection3D from "@/components/HeroSection3D";
 import WordByWordTextAnimation from "@/components/cyberPunkTextAnimation/WordByWordTextAnimation";
+import BlobAnimation from "@/components/BlobAnimation";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -37,7 +38,8 @@ export default function Home() {
 
       <MyHobbies />
       <TextAnimation value={Paragraph} />
-      <Footer />
+      {/* <Footer /> */}
+      {/* <BlobAnimation /> */}
     </main>
   );
 }
