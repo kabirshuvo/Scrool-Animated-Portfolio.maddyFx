@@ -5,7 +5,7 @@ import { Abril_Fatface } from "next/font/google";
 import HeroSection2D from "@/components/HeroSection2D";
 import MyFiverJourney from "@/components/MyFiverJourney";
 import MyHobbies from "@/components/MyHobbies";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import ImageCardTwo from "@/components/image-gallery/ImageCardTwo";
 import TextAnimation from "@/components/cyberPunkTextAnimation/TextAnimation";
 import ImageCardsOne from "@/components/image-gallery/ImageCardsOne";
@@ -13,6 +13,7 @@ import TextAnimationOne from "@/components/cyberPunkTextAnimation/TextAnimationO
 import HeroSection3D from "@/components/HeroSection3D";
 import WordByWordTextAnimation from "@/components/cyberPunkTextAnimation/WordByWordTextAnimation";
 import BlobAnimation from "@/components/BlobAnimation";
+import Footer from "@/components/Footer";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -38,8 +39,7 @@ export default function Home() {
 
       <MyHobbies />
       <TextAnimation value={Paragraph} />
-      {/* <Footer /> */}
-      {/* <BlobAnimation /> */}
+      <Footer />
     </main>
   );
 }
