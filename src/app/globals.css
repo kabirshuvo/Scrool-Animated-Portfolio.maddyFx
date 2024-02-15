@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* overflow: hidden; */
-}
-
 .flip-card-inner {
   transition: transform 0.6s;
   transform-style: preserve-3d;
@@ -19,4 +15,55 @@ body {
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+@keyframes cyberpunk {
+  0% {
+    color: #f2994a; /* Initial color */
+    text-shadow: none; /* Initial text-shadow */
+  }
+  50% {
+    color: #0ff; /* Midpoint color */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff; /* Blurry text-shadow */
+  }
+  100% {
+    color: #f2994a; /* Return to original color */
+    text-shadow: none; /* Return to no text-shadow */
+  }
+}
+
+.textAnimation {
+  font-size: 3rem;
+  max-width: 1280px;
+  padding: 3rem;
+}
+
+.textAnimationOne {
+  font-size: 13rem;
+  width: 70%;
+  margin-left: 2rem;
+  line-height: 11rem;
+  text-align: center;
+  font: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WordByWordTextAnimation {
+  font-size: 3rem;
+  max-width: 1280px;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.word {
+  margin-right: 1rem;
+  /* margin-top: 1rem; */
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  opacity: 0.025;
 }

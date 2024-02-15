@@ -2,32 +2,38 @@ import Link from "next/link";
 import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Image from "next/image";
+import CyberpunkTitle from "./cyberPunkTextAnimation/CyberpunkTitle";
 
 const NavBar = () => {
   return (
     <div className="flex justify-center items-center">
       <nav className="w-full px-8 flex items-center justify-between absolute top-0 z-10 py-2 border-b border-slate-700 ">
-        <div>
+        <div className="flex justify-center items-center gap-11">
           <Image src="/cmyk_plus_logo.png" alt="Logo" width={30} height={30} />
+          <div className="text-sm">
+            {" "}
+            <CyberpunkTitle className="p-4">MaddyFX</CyberpunkTitle>
+          </div>
         </div>
+
         <div>
           <ul className="flex gap-7 pt-2">
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/">Home</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/about">About</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/designs">Designs</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/offers">Offers</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/services">Services</Link>
             </li>
-            <li>
+            <li className="transform transition-transform duration-500 ease-in-out hover:scale-110">
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
