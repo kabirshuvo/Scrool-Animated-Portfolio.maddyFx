@@ -14,6 +14,7 @@ import HeroSection3D from "@/components/HeroSection3D";
 import WordByWordTextAnimation from "@/components/cyberPunkTextAnimation/WordByWordTextAnimation";
 import BlobAnimation from "@/components/BlobAnimation";
 import Footer from "@/components/Footer";
+import ProjectDisplay from "@/components/projects/ProjectDisplay";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -36,7 +37,7 @@ export default function Home() {
       <MyFiverJourney />
       <ImageCardTwo />
       <TextAnimation value={Paragraph} />
-
+      <ProjectDisplay />
       <MyHobbies />
       <TextAnimation value={Paragraph} />
     </main>
