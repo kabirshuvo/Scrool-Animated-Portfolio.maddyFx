@@ -39,7 +39,7 @@ export default function Home() {
 
       <MyHobbies />
       <TextAnimation value={Paragraph} />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
