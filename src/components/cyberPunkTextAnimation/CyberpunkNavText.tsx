@@ -1,12 +1,13 @@
+"use client";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
 
-interface CyberpunkTitleProps {
+interface CyberpunkNavTextProps {
   children: React.ReactNode;
   className?: string;
 }
 
-const CyberpunkTitle: React.FC<CyberpunkTitleProps> = ({
+const CyberpunkNavText: React.FC<CyberpunkNavTextProps> = ({
   children,
   className,
 }) => {
@@ -22,42 +23,37 @@ const CyberpunkTitle: React.FC<CyberpunkTitleProps> = ({
           .current!.innerText.split("")
           .map((letter, index) => {
             if (index < iterations) {
-              return (titleRef.current!.dataset.value = children as string)[
-                index
-              ];
+              return titleRef.current!.dataset.value![index];
             }
             return letters[Math.floor(Math.random() * 26)];
           })
           .join("");
-        if (
-          iterations >=
-          (titleRef.current!.dataset.value = children as string).length
-        )
+        if (iterations >= titleRef.current!.dataset.value!.length)
           clearInterval(interval);
 
-        iterations += 1 / 4;
-      }, 300);
+        iterations += 1 / 3;
+      }, 30);
     }
   };
 
   useEffect(() => {
     if (titleRef.current) {
-      titleRef.current.innerText = children as string;
+      titleRef.current.innerText = titleRef.current.dataset.value!;
     }
-  }, [children]);
+  }, []);
 
   return (
     <div>
-      <h1 ref={titleRef} data-value={children} onMouseMove={handleMouseMove}>
+      <h1 ref={titleRef} data-value="MaddyFX" onMouseMove={handleMouseMove}>
         {children}
       </h1>
     </div>
   );
 };
 
-CyberpunkTitle.propTypes = {
+CyberpunkNavText.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };
 
-export default CyberpunkTitle;
+export default CyberpunkNavText;

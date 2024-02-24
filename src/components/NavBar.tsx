@@ -3,6 +3,7 @@ import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Image from "next/image";
 import CyberpunkTitle from "./cyberPunkTextAnimation/CyberpunkTitle";
+import CyberpunkNavText from "./cyberPunkTextAnimation/CyberpunkNavText";
 
 const NavBar = () => {
   return (
@@ -10,9 +11,11 @@ const NavBar = () => {
       <nav className="w-full px-8 flex items-center justify-between absolute top-0 z-10 py-2 border-b border-slate-700 ">
         <div className="flex justify-center items-center gap-11">
           <Image src="/cmyk_plus_logo.png" alt="Logo" width={30} height={30} />
-          <div className="text-sm">
+          <div className="text-xl w-20 text-[#f2994a]">
             {" "}
-            <CyberpunkTitle className="p-4">MaddyFX</CyberpunkTitle>
+            <Link href="/">
+              <CyberpunkNavText>MaddyFX</CyberpunkNavText>
+            </Link>
           </div>
         </div>
 

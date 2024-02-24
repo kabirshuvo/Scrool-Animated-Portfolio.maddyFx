@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MySkills from "../my-skills/page";
+import ProjectDisplay from "@/components/projects/ProjectDisplay";
 
 const DesignsPage = () => {
   return (
@@ -106,6 +107,7 @@ const DesignsPage = () => {
       <section className="w-screen h-screen relative">
         <h1>Second Section</h1>
       </section>
+      <ProjectDisplay />
       <MySkills />
     </main>
   );
