@@ -20,22 +20,19 @@ const projects: ProjectItem[] = [
   {
     title: "Nitting Graphics",
     description: "More Info",
-
-    src: "officestudio.png",
+    src: "Adobe_Photoshop_logo.png",
     color: "#8C8C8C",
   },
   {
     title: "LOGO - story telling",
     description: "Take a Tour",
-
-    src: "locomotive.png",
+    src: "Adobe_Spark_logo.png",
     color: "#EFE8D3",
   },
   {
     title: "AI Super Power",
     description: "Wish me good",
-
-    src: "silencio.png",
+    src: "Adobe_InDesign_logo.png",
     color: "#706D63",
   },
 ];

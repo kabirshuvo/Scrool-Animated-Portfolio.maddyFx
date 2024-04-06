@@ -75,11 +75,11 @@ const HeroSection2D = () => {
           <a href="#">Experience Showcase.</a>
         </p>
         <div className="flex justify-center mt-4 gap-7 text-base md:text-lg">
-          <button className="border rounded-3xl px-4 border-slate-700 text-slate-900 hover:border-white hover:text-slate-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
-            Go Ahead 1
+          <button className="border rounded-3xl px-4 border-slate-700 text-green-900 hover:border-white hover:text-green-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
+            Gallery 1
           </button>
-          <button className="border rounded-3xl px-4 border-slate-700 text-slate-900 hover:border-white hover:text-slate-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
-            Go Ahead 2
+          <button className="border rounded-3xl px-4 border-slate-700 text-green-900 hover:border-white hover:text-green-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
+            Gallery 2
           </button>
         </div>
       </div>
