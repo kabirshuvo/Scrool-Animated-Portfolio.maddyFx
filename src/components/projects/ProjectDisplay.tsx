@@ -17,6 +17,7 @@ const projects: ProjectItem[] = [
     src: "AdobeIllustrator_logo.png",
     color: "#000000",
   },
+  // image source corrected
   {
     title: "Nitting Graphics",
     description: "More Info",
