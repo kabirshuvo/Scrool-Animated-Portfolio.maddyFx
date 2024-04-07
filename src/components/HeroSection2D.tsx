@@ -3,6 +3,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import { Abril_Fatface } from "next/font/google";
 import CyberpunkTitle from "./cyberPunkTextAnimation/CyberpunkTitle";
+import Link from "next/link";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -76,10 +77,10 @@ const HeroSection2D = () => {
         </p>
         <div className="flex justify-center mt-4 gap-7 text-base md:text-lg">
           <button className="border rounded-3xl px-4 border-slate-700 text-green-900 hover:border-white hover:text-green-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
-            Gallery 1
+            <Link href="/designs">Designs</Link>
           </button>
           <button className="border rounded-3xl px-4 border-slate-700 text-green-900 hover:border-white hover:text-green-500 transition-all duration-500 ease-in-out hover:shadow-2xl">
-            Gallery 2
+            <Link href="/designs">Designs</Link>
           </button>
         </div>
       </div>
