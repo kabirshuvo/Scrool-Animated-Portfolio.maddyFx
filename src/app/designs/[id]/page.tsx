@@ -2,7 +2,7 @@ import Link from "next/link";
 import designs, { Design } from "@/lib/designs";
 import DesignCard from "@/components/DesignCard";
 
-export default function PhotoPage({
+export default function DesignPage({
   params: { id },
 }: {
   params: { id: string };
@@ -22,7 +22,7 @@ export default function PhotoPage({
         </div>
 
         <div className="mt-10 w-1/3">
-          <DesignCard Design={design} />
+          <DesignCard design={design} />
         </div>
       </div>
     </section>
