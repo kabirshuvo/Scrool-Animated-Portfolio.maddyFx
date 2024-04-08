@@ -26,7 +26,7 @@ export default function Designs() {
             ))}
           </ul>
         </div>
-        <div>New Div</div>
+        <div className="py-16">New Div</div>
       </div>
     </section>
   );

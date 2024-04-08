@@ -31,15 +31,23 @@ export default function Home() {
     <main className="flex flex-col  min-h-screen">
       <HeroSection2D />
       <ImageCardsOne />
-      <TextAnimationOne value={Words} />
+      <TextAnimation value={Paragraph} />
+
       <ImageCardsOne />
-      <WordByWordTextAnimation value={Paragraph} />
+      <div className="flex gap-8 ">
+        <div className="w-1/2  flex justify-center items-center -pe-16">
+          <WordByWordTextAnimation value={Paragraph} />
+        </div>
+        <div className="w-1/2">
+          <ProjectDisplay />
+        </div>
+      </div>
+
       <MyFiverJourney />
       <ImageCardTwo />
       <TextAnimation value={Paragraph} />
-      <ProjectDisplay />
       <MyHobbies />
-      <TextAnimation value={Paragraph} />
+      <TextAnimationOne value={Words} />
     </main>
   );
 }
