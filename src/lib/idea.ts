@@ -1,4 +1,4 @@
-export type Design = {
+export type Idea = {
   id: string;
   idea: string;
   name: string;
@@ -7,12 +7,12 @@ export type Design = {
   imageSrc: string;
 };
 
-const designs: Design[] = [
+const ideas: Idea[] = [
   {
     id: "1",
     idea: "1",
     name: "Kevin Canlas",
-    href: "https://twitter.com/kvncnls/status/1471832344986324998",
+    href: "https://www.kabirshuvo.com",
     username: "@kvncnls",
     imageSrc: "/Adobe_Photoshop_logo.png",
   },
@@ -20,7 +20,7 @@ const designs: Design[] = [
     id: "2",
     idea: "2",
     name: "Pedro Duarte",
-    href: "https://twitter.com/peduarte/status/1463897468383412231",
+    href: "https://www.kabirshuvo.com",
     username: "@peduarte",
     imageSrc: "/Adobe_Spark_logo.png",
   },
@@ -28,7 +28,7 @@ const designs: Design[] = [
     id: "3",
     idea: "3",
     name: "Ahmad Awais",
-    href: "https://twitter.com/MrAhmadAwais/status/1338151679083032577",
+    href: "https://www.kabirshuvo.com",
     username: "@MrAhmadAwais",
     imageSrc: "/Adobe_type_code_logo.png",
   },
@@ -36,7 +36,7 @@ const designs: Design[] = [
     id: "4",
     idea: "4",
     name: "Leandro Soengas",
-    href: "https://twitter.com/lsoengas/status/1352302741339693061",
+    href: "https://www.kabirshuvo.com",
     username: "@lsoengas",
     imageSrc: "/AdobeIllustrator_logo.png",
   },
@@ -44,7 +44,7 @@ const designs: Design[] = [
     id: "5",
     idea: "5",
     name: "Samina",
-    href: "https://twitter.com/saminacodes/status/1466479548837482497",
+    href: "https://www.kabirshuvo.com",
     username: "@saminacodes",
     imageSrc: "/Adobe_InDesign_logo.png",
   },
@@ -52,7 +52,7 @@ const designs: Design[] = [
     id: "7",
     idea: "7",
     name: "山岸和利💛",
-    href: "https://twitter.com/ykzts/status/1426358452356407297",
+    href: "https://www.kabirshuvo.com",
     username: "@ykzts",
     imageSrc: "/Midjourney.png",
   },
@@ -60,7 +60,7 @@ const designs: Design[] = [
     id: "8",
     idea: "8",
     name: "Altngelo",
-    href: "https://twitter.com/AfterDarkAngelo/status/1456372859090075648",
+    href: "https://www.kabirshuvo.com",
     username: "@AfterDarkAngelo",
     imageSrc: "/AdobeIllustrator_logo.png",
   },
@@ -68,10 +68,10 @@ const designs: Design[] = [
     id: "9",
     idea: "9",
     name: "Matias Baldanza",
-    href: "https://twitter.com/matiasbaldanza/status/1404834163203715073",
+    href: "https://www.kabirshuvo.com",
     username: "@matiasbaldanza",
     imageSrc: "/Adobe_Photoshop_logo.png",
   },
 ];
 
-export default designs;
+export default ideas;

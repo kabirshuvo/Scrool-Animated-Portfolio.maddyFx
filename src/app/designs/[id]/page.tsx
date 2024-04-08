@@ -11,7 +11,7 @@ export default function DesignPage({
 
   return (
     <section className="py-24">
-      <div className="container">
+      <div className="container flex justify-center items-center flex-col">
         <div>
           <Link
             href="/designs"
@@ -23,6 +23,7 @@ export default function DesignPage({
 
         <div className="mt-10 w-1/3">
           <DesignCard design={design} />
+          {/* Design Card will be here */}
         </div>
       </div>
     </section>
