@@ -1,10 +1,8 @@
-export default function DesignsLayout({
-  children,
-  modal,
-}: {
+export default function DesignsLayout(props: {
   children: React.ReactNode;
   modal: React.ReactNode;
 }) {
+  const { children, modal } = props;
   return (
     <>
       {children}
