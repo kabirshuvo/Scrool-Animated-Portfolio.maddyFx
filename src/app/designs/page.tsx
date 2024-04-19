@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-
-import degins from "@/lib/designs";
+import designs from "@/lib/designs";
+// import degins from "@/lib/designs";
 
 export default function Designs() {
   return (
@@ -11,7 +11,7 @@ export default function Designs() {
 
         <div className="flex justify-center items-center">
           <ul className="mt-10 grid auto-rows-max grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-            {degins.map(({ id, imageSrc }) => (
+            {designs.map(({ id, imageSrc }) => (
               <li key={id}>
                 <Link href={`/designs/${id}`}>
                   <Image
