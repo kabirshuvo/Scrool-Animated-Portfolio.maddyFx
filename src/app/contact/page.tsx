@@ -1,17 +1,51 @@
-import React from 'react'
+"use client";
+import { useState } from "react";
+import { NextPage } from "next";
 
-const ContactPage = () => {
+const ContactPage: NextPage = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Add logic to handle form submission here
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
-    <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-      Contact Page
+    <div>
+      <h1>Contact Us</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Message:
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
     </div>
-    <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-     Next.js 
-    </div>
-  </main>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

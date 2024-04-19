@@ -18,7 +18,7 @@ const TextAnimationOne: React.FC<TextAnimationProps> = ({ value }) => {
       <div>
         <Magnetic>
           <Button variant="primary" className="mt-16">
-            My Typographics
+            Lets Connect
           </Button>
         </Magnetic>
       </div>
