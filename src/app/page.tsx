@@ -15,6 +15,7 @@ import WordByWordTextAnimation from "@/components/cyberPunkTextAnimation/WordByW
 import BlobAnimation from "@/components/BlobAnimation";
 import Footer from "@/components/Footer";
 import ProjectDisplay from "@/components/projects/ProjectDisplay";
+import SimpleHeroSection from "@/components/heros/SimpleHeroSection";
 
 const abril = Abril_Fatface({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ const Words = "Lets make  great work together.";
 export default function Home() {
   return (
     <main className="flex flex-col  min-h-screen">
+      <SimpleHeroSection />
       <HeroSection2D />
       <ImageCardsOne />
       <TextAnimation value={Paragraph} />

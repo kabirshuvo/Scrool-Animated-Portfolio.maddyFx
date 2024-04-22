@@ -4,8 +4,12 @@ import "../../../styles/simpleHeroSection.css";
 const SimpleHeroSection = () => {
   return (
     <div>
-      <div id="left-slide"></div>
-      <div id="right-slide"></div>
+      <div id="left-slide" className="slide">
+        <h2 className="title">Today is going to be awesome</h2>
+      </div>
+      <div id="right-slide" className="slide">
+        <h2 className="title">Today is going to be wonderful</h2>
+      </div>
     </div>
   );
 };
