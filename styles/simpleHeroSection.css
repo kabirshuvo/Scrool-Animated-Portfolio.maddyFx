@@ -1,15 +1,44 @@
-.slide {
+.side {
   height: 100vh;
   width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
+  position: absolute;
 }
 
-.slide .title {
+.side .title {
   color: white;
   font-family: "Rubik", sans-serif;
   font-size: 8vw;
   margin: 0px 15vw;
   width: 70vw;
+}
+.side .fancy {
+  font-family: "Lobster", cursive;
+  font-size: 1.3rem;
+  line-height: 0.8rem;
+}
+
+#left-side {
+  background-color: #4c00b0;
+  z-index: 2;
+}
+#right-side {
+  background-color: #ffbf00;
+}
+
+#left-side .title {
+  color: white;
+}
+
+#left-side .fancyWord {
+  color: #ffbf00;
+}
+
+#right-side .title {
+  color: black;
+}
+#right-side .fancyWord {
+  color: white;
 }
